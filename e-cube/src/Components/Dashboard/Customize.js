@@ -3,6 +3,8 @@ import "./Users.css";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import Roles from "../Roles/Roles";
 import Permissions from "../Permissions/Permissions";
+import ViewPermissions from "../Permissions/ViewPermissions";
+import ViewRoles from "../Roles/ViewRoles";
 
 class Customize extends Component {
     render() {
@@ -36,7 +38,8 @@ class Customize extends Component {
                                 component={Roles}
                             />
                             <Route exact path="/permissions" component={Permissions} />
-                            <Route exact path="/view" component={Permissions} />
+                            <Route exact path="/view-permissions" component={ViewPermissions} />
+                            <Route exact path="/view-roles" component={ViewRoles} />
                         </div>
                     </div>
                 </Router>
