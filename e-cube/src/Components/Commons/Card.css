@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+  .btn-class {
+    margin-top: 60px;
+    margin-left: 40px;
+    padding-top: 20px;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: lightseagreen;
+    color: ivory;
+    font-weight: 400;
+    font-size: larger;
+    border-radius: 12px;
+    border: none;
+  }

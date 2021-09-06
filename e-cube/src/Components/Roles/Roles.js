@@ -1,8 +1,14 @@
 import { Component } from "react";
-class Rules extends Component {
+import Card from "../Commons/Card";
+class Roles extends Component {
     render() {
-        return (<div>Rules</div>);
+        return (<div>
+            <Card title="VIEW ROLES"></Card>
+            <Card title="ADD ROLES"></Card>
+            <Card title="DELETE ROLES"></Card>
+            <Card title="EDIT ROLES"></Card>
+        </div>);
     }
 }
 
-export default Rules;
+export default Roles;
