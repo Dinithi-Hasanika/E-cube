@@ -36,6 +36,7 @@ class Customize extends Component {
                                 component={Roles}
                             />
                             <Route exact path="/permissions" component={Permissions} />
+                            <Route exact path="/view" component={Permissions} />
                         </div>
                     </div>
                 </Router>

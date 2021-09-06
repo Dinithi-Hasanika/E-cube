@@ -1,8 +1,15 @@
 import React from "react";
 import "./Card.css";
-const Card = ({ title }) => {
+import { Link } from "react-router-dom";
+
+const Card = ({ title, links }) => {
     return (
-        <button type="button" class="btn-class">{title}</button>
+        <div className="btn-class">
+            <Link to={links} style={{ textDecoration: 'none', color: 'white', paddingTop: '50px', paddingLeft: '150px', flex: 'centre' }} >
+                {title}
+            </Link>
+        </div>
+
     );
 };
 
