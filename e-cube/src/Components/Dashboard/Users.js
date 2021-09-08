@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
+import ViewUser from "../Users/ViewUser";
 import CreateUser from "./CreateUser";
 import Customize from "./Customize";
 import "./Users.css";
@@ -17,6 +18,14 @@ class Users extends Component {
                                     className="btn btn-outline-success my-2 my-sm-0"
                                 >
                                     Create User
+                                </Link>
+                            </div>
+                            <div className="gap">
+                                <Link
+                                    to="/view-user"
+                                    className="btn btn-outline-success my-2 my-sm-0"
+                                >
+                                    View User
                                 </Link>
                             </div>
                             <div className="gap">
@@ -44,6 +53,7 @@ class Users extends Component {
                             />
                             <Route exact path="/delete-user" component={Customize} />
                             <Route exact path="/activities" component={Customize} />
+                            <Route exact path="/view-user" component={ViewUser} />
                         </div>
                     </div>
                 </Router>
